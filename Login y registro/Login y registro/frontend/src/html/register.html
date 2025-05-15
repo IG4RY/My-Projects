@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="57x57" href="/frontend/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/frontend/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/frontend/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/frontend/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/frontend/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/frontend/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/frontend/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/frontend/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/frontend/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/frontend/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/frontend/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/frontend/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/frontend/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/frontend/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css"> <!--CSS Style call-->
+    
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <img src="/frontend/images/logo/Checklist.png" id="companyLogo" alt="CompanyLogo">
+        <h1 id="companyName">Register</h1>
+    </header>
+
+    <div class="card">
+        <form onsubmit="onFormSubmit()" autocomplete="off">
+            <div class="fieldBox">
+                <label for="user">First Name</label>
+                <input type="text" class="inputLarge" id="name" name="userName" placeholder="Caditos" required>
+            </div>
+
+            <div class="fieldBox">
+                <label for="user">Second Name</label>
+                <input type="text" class="inputLarge" id="name2" name="userName2" placeholder="EdRwado" required>
+            </div>
+
+            <div class="fieldBox">
+                <label for="user">Middle Name</label>
+                <input type="text" class="inputLarge" id="name2" name="userName2" placeholder="Ramo" required>
+            </div>
+
+            <div class="fieldBox">
+                <label for="user">Last Name</label>
+                <input type="text" class="inputLarge" id="name2" name="userName2" placeholder="Sánchez" required>
+            </div>
+
+            <div class="fieldBox">
+                <label for="user">User Name</label>
+                <input type="text" class="inputLarge" id="name2" name="userName2" placeholder="CangrBurguit0" required>
+            </div>
+
+            <hr>
+
+            <div class="fieldBox">
+                <label for="dscSel">Area</label>
+                <select class="inputLarge" id="dscSel" name="tagDescSelect" required>
+                    <option value="">Select an option</option>
+                    <optgroup label="Area">
+                        <option value="it">IT</option>
+                        <option value="fin">Finance</option>
+                        <option value="aut">Automatization</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="fieldBox">
+                <label for="dscSel">Role</label>
+                <select class="inputLarge" id="dscSel" name="tagDescSelect" required>
+                    <option value="">Select an option</option>
+                    <optgroup label="Area">
+                        <option value="it">Database</option>
+                        <option value="fin">Developer</option>
+                        <option value="aut">Network</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="logisterField"><input type="submit" class="logister" id="register" value="Register"></div>
+        </form>
+    </div>
+</body>
+</html>
