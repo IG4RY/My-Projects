@@ -5,55 +5,70 @@ html, body{
 }
 
 .logsterCard {
-  width: 18%;
+  width: 30%;
   height: auto;
   background-color: #fff;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   
   margin: 20px;
-  padding: 25px;
-  border-radius: 10px 10px 10px 10px;
+  padding: 10px 10px;
+  border-radius: 10px;
 
   font-size: 14px;
 }
     #logsterTitle{
+        width: 100%;
+        text-align: center;
+
+        margin: 0;
+        padding: 10px;
+
+        border-radius: 5px;
+
         color: #000;
         font-size: 16px;
+        background-color: #f9f9fb;
     }
-
-        #registerText:hover{
-            color: #0c6efe;
-            transition: 0.25;
-            cursor: pointer;
-        }
 
     #separator{
         width: 100%;
-        background-color: #aaa;
+        background-color: #bbb;
         margin: 10px 0;
     }
 
     .fieldBox{
         width: 100%;
         height: auto;
-        padding: 5px;
-        margin-bottom: 10px;
 
+        display: flex;
+
+
+        margin-bottom: 10px;
         border-radius: 5px;
-        border: 1px solid #aaa;
+        border: 1px solid #bbb;
     }
+
+        .labelz{
+            width: 40%;
+            padding: 10px;
+            background-color: #f9f9fb;
+            border-right: 1px solid #bbb;
+        }
+
         .inputLarge{
-            margin-left: 5%;
-            width: auto;
-            border-radius: 20px;
+            width: 100%;     
+            padding: 10px;       
             border: 0;
         }
-        
+
     .logsterBtn{
+        width: 100%;
         background-color: #0c6efe;
+        
         color: #fff;
         border: none;
         font-weight: bold;
@@ -61,9 +76,4 @@ html, body{
         border-radius: 5px;
         cursor: pointer;
         margin-bottom: 5px;
-    }
-
-    #registerText{
-        color: #000;
-        text-decoration: none;
     }
