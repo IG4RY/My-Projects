@@ -23,7 +23,7 @@ html, body{
     #logsterTitle{
         width: 100%;
         text-align: center;
-        
+
         margin: 0;
         padding: 10px;
 
@@ -81,9 +81,10 @@ html, body{
     #registerText{
         color: #000;
         text-decoration: none;
+        transition: 0.25s;
     }
         #registerText:hover{
             color: #0c6efe;
-            transition: 0.5s;
+            transition: 0.25s;
             cursor: pointer;
         }
