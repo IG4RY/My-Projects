@@ -3,25 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="../css/logster.css">/ <!--CSS Style call-->
     <link rel="stylesheet" href="../css/index.css"> <!--CSS Style call-->
+    
     <title>Login</title>
   </head>
   <body>
-    <form class="logsterCard" onsubmit="onFormSubmit()" autocomplete="off">
-      <h1 id="logsterTitle">Login</h1>
-      <hr id="separator">
-      <div class="fieldBox">
-          <label class="labelz" for="email">Email</label>
-          <input type="email" class="inputLarge" id="email" name="userEmail" placeholder="ejemplo1234@gmail.com" required>
-      </div>
+    <header></header>
+    <main>
+      <form class="logsterCard" onsubmit="onFormSubmit()" autocomplete="off">
+        <h1 id="logsterTitle">Login</h1>
+        <hr id="separator">
+        <div class="fieldBox">
+            <label class="labelz" for="email">Email</label>
+            <input type="email" class="inputLarge" id="email" name="userEmail" placeholder="ejemplo1234@gmail.com" required>
+        </div>
 
-      <div class="fieldBox">
-          <label class="labelz" for="pswd">Contraseña</label>
-          <input type="password" class="inputLarge" id="pswd" name="userPassword" placeholder="1234" required>
-      </div>
-      <br>
-      <input type="submit" class="logsterBtn" value="Iniciar sesión"> 
-      <a href="register.html" id="registerText">¡Regístrate ahora!</a>
-    </form>
+        <div class="fieldBox">
+            <label class="labelz" for="pswd">Contraseña</label>
+            <input type="password" class="inputLarge" id="pswd" name="userPassword" placeholder="1234" pattern=".{4,}" required>
+        </div>
+        <br>
+        <input type="submit" class="logsterBtn" value="Iniciar sesión"> 
+        <a href="register.html" id="registerText">¡Regístrate ahora!</a>
+      </form>
+    </main>
+    <footer></footer>
   </body>
 </html>
