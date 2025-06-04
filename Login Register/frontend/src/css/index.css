@@ -1,6 +1,10 @@
 #registerText{
-    color: #000;
+    margin-bottom: 5px;
+    
     text-decoration: none;
+    
+    color: #000;
+    
     transition: 0.25s;
 }
     #registerText:hover{

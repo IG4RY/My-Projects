@@ -1,2 +1,83 @@
--- Database
--- Description: Database connection and initialization
+ /*|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
+   |   ≈   ≈   ≈   ≈   ≈   ≈   ≈   ≈   ≈   ≈         TagsPLC          ≈   ≈   ≈   ≈   ≈   ≈   ≈   ≈   ≈   ≈   ≈   |
+   |______________________________________________________________________________________________________________|*/
+
+
+/*~   ~   ~   ~   ~
+  |  Create & Use |
+  ~   ~   ~   ~   ~*/
+    CREATE DATABASE tagsPLC;
+    USE tagsPLC;
+
+                                       /*|‾‾    ‾‾    ‾‾     ‾‾    ‾‾   ‾‾|
+                                                ≈   DDL - Tables   ≈   
+                                         |__    __    __     __    __   __|*/
+
+/*~   ~   ~   ~   ~   ~   ~
+  |  Strong Table(s) (PK) |
+  ~   ~   ~   ~   ~   ~   ~*/
+
+    -- Toman's Devices Inventory
+
+    CREATE TABLE Devices(
+        ID INT(3) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+
+        name VARCHAR(15),
+        status ENUM('Activo', 'Inactivo', 'Mantenimiento') DEFAULT 'Activo',
+        
+        ID_Model INT(3), INDEX(ID_Model), FOREIGN KEY (ID_Model) REFERENCES deviceModel(ID) ON UPDATE CASCADE ON DELETE RESTRICT
+    ) ENGINE=INNODB CHARSET=UTF8MB4;
+
+
+/*~   ~   ~   ~   ~   ~   ~
+  |   Weak Table(s) (FK)  |
+  ~   ~   ~   ~   ~   ~   ~*/
+
+    -- Technical Data
+
+    CREATE TABLE DeviceModel(
+        ID INT(3) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+
+        name VARCHAR(15),
+        description TEXT,
+    ) ENGINE=INNODB CHARSET=UTF8MB4;
+        
+
+    -- Info Captured by Tag
+
+    CREATE TABLE Tag(
+        ID_Device INT(3), INDEX(ID_Device), FOREIGN KEY (ID_Device) REFERENCES Devices(ID) ON UPDATE CASCADE ON DELETE RESTRICT,
+        ID INT(5) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+        
+        name VARCHAR(15),
+        description TEXT,
+    ) ENGINE=INNODB CHARSET=UTF8MB4;
+
+    SHOW TABLES;
+
+                                      /*|‾‾    ‾‾    ‾‾     ‾‾    ‾‾   ‾‾|
+                                                ≈   DML - Tables   ≈   
+                                        |__    __    __     __    __   __|*/
+
+/*~    ~    ~    ~
+  |  Insertions  |
+  ~    ~    ~    ~*/
+
+    -- Devices insertions
+    INSERT INTO Devices (name, description, model) VALUES
+    ("Bridge", MD5(111)),
+    ("Bob", MD5(222));
+
+    -- Date insertions
+    INSERT INTO Date (ID_Student, ID_Tutor, dateDay, dateHour, dateSubject) VALUES
+    (1, 1, "Lune", "10:00", "Junta"),
+    (2, 2, "Jueve", "12:00", "Expulsion");
+    
+
+/*~    ~    ~    ~
+  |    Querys    |
+  ~    ~    ~    ~*/
+    
+    SELECT * FROM Devices;
+    SELECT * FROM Tag;
+    SELECT * FROM Date;
