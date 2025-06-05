@@ -1,8 +1,7 @@
 #registerText{
-    margin-bottom: 5px;
+    width: auto;
     
     text-decoration: none;
-    
     color: #000;
     
     transition: 0.25s;

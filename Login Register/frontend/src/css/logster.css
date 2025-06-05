@@ -1,93 +1,68 @@
-html, body{
-    background-color: #202428;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    height: 100%;
-}
-
-.centered{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logsterCard {
-    width: auto;
-    height: auto;
-    background-color: #fff;
+.logsterCard{
+    width: auto; height: auto;
     
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: center;
 
-    margin: 20px;
-    padding: 10px;  padding-top: 0;
+    padding: 15px;
     
     border-radius: 10px;
 
     font-size: 14px;
+    
+    background-color: #fff;
 }
 
     #logsterTitle{
-        width: 100%;
-
         margin: 0;
-        padding: 10px;
 
         border-radius: 10px 10px 0 0;
 
-        color: #000;
         font-size: 16px;
+
+        color: #000;
         background-color: #f9f9fb;
     }
 
-    #separator{
-        width: 100%;
-        background-color: #bbb;
-        margin: 0; margin-bottom: 15px;
-    }
-
     .fieldBox{
-        display: flex;
+        width: 100%; height: auto;
 
-        width: 100%;
-        height: auto;
+        display: flex;
 
         margin-bottom: 10px;
         
-        border-radius: 5px;
-        border: 1px solid #bbb;
+        border: 1px solid #bbb; border-radius: 5px;
     }
 
         .labelz{
             width: 40%;
+
             padding: 10px;
+
+            border-right: 1px solid #bbb; border-radius: 5px 0 0 5px;
+
             background-color: #f9f9fb;
-            border-right: 1px solid #bbb;
-            border-radius: 5px 0 0 5px;
         }
 
         .inputLarge{
-            width: 100%;     
-            padding: 10px;       
-            border: 0;
-            border-radius: 5px;
+            padding: 10px;
+
+            border: 0; border-radius: 0 5px 5px 0;
         }
 
     .logsterBtn{
         width: 100%;
 
-        padding: 10px 20px;
+        padding: 10px;
         margin-bottom: 15px;
 
-        border: none;
-        border-radius: 5px;
+        border: none; border-radius: 5px;
 
-        background-color: #0c6efe;
-        
         font-weight: bold;
+        
+        background-color: #0c6efe;
         color: #fff;
         
         cursor: pointer;
