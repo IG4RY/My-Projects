@@ -4,8 +4,12 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <!--CSS Style call -->
-    <link rel="stylesheet" href="../css/general.css"> <!-- Login -->
+    <!-- JavaScript -->
+    <script type="text/javascript" src="/backend/src/js/index.js"></script> <!-- Login -->
+    <script type="text/javascript" src="/backend/src/js/connection.js"></script> <!-- DB -->
+    
+    <!--CSS Style -->
+    <link rel="stylesheet" href="../css/general.css"> <!-- General stuff -->
     <link rel="stylesheet" href="../css/index.css"> <!-- Login -->
     <link rel="stylesheet" href="../css/logster.css"> <!-- Login & Register -->
     
@@ -18,13 +22,13 @@
         <h1 id="logsterTitle">Login</h1>
         <hr id="separator">
         <div class="fieldBox">
-            <label class="labelz" for="email">Email</label>
-            <input type="email" class="inputLarge" id="email" name="userEmail" placeholder="CangreBurgu1t0@gmail.com" required>
+            <label class="labelz" for="eml">Email</label>
+            <input type="email" class="inputLarge" id="eml" name="email" placeholder="CangreBurgu1t0@gmail.com" required>
         </div>
 
         <div class="fieldBox">
             <label class="labelz" for="pswd">Contraseña</label>
-            <input type="password" class="inputLarge" id="pswd" name="userPassword" placeholder="1234" pattern=".{4,}" required>
+            <input type="password" class="inputLarge" id="pswd" name="password" placeholder="1234" pattern=".{4,}" required>
         </div>
         <br>
         <input type="submit" class="logsterBtn" value="Iniciar sesión"> 
