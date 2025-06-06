@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="/backend/src/js/index.js"></script> <!-- Login -->
+    <script type="text/javascript" src="/backend/src/js/connection.js"></script> <!-- DB -->
+    
+    <!--CSS Style -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <title>Login</title>
+  </head>
+  <body class="h-full flex justify-center items-center m-0 font-sans bg-zinc-800">
+    <header></header>
+    <main>
+      <form class="w-auto h-auto flex flex-col justify-center text-center p-4 rounded-lg text-sm bg-white" onsubmit="onFormSubmit()" autocomplete="off">
+        <h1 class="m-0 rounded-t-lg text-base text-black bg-stone-200">Login</h1>
+        <hr class="w-full my-2 bg-neutral-400">
+        <div class="w-full h-auto flex mb-2 border border-stone-50 rounded-l-md bg-stone-200">
+            <label class="w-sm p-2 border-r border-stone-50 rounded" for="eml">Email</label>
+            <input type="email" class="inputLarge" id="eml" name="email" placeholder="CangreBurgu1t0@gmail.com" required>
+        </div>
+
+        <div class="w-full h-auto flex mb-2 border border-stone-50 rounded-md">
+            <label class="labelz" for="pswd">Contraseña</label>
+            <input type="password" class="inputLarge" id="pswd" name="password" placeholder="1234" pattern=".{4,}" required>
+        </div>
+        <br>
+        <input type="submit" class="logsterBtn" value="Iniciar sesión"> 
+        <a href="register.html" class="w-auto no-underline text-black transition duration-300 cursor-pointer hover:text-blue-600">¡Regístrate ahora!</a>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>

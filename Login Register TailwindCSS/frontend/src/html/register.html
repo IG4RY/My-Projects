@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- JavaScript -->
+    <script type="text/javascript" src="/backend/src/js/register.js"></script> <!-- Register -->
+    <script type="text/javascript" src="/backend/src/js/connection.js"></script> <!-- DB -->
+
+    <!--CSS Style call -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Register</title>
+  </head>
+  <body class="centered">
+    <!-- <header></header> -->
+    <main>
+      <form class="logsterCard" onsubmit="onFormSubmit()" autocomplete="off">
+        <h1 id="logsterTitle">Registro</h1>
+        <hr id="separator">
+        <div class="fieldBox">
+            <label class="labelz" for="usrNme">Nombre</label>
+            <input type="text" class="inputLarge" id="usrNme" name="userName" placeholder="EdRwado Sánchez" required>
+        </div>
+
+        <div class="fieldBox">
+            <label class="labelz" for="eml">Email</label>
+            <input type="email" class="inputLarge" id="eml" name="email" placeholder="ejemplo1234@gmail.com" required>
+        </div>
+
+        <div class="fieldBox">
+            <label class="labelz" for="pswd">Contraseña</label>
+            <input type="password" class="inputLarge" id="pswd" name="password" placeholder="1234" pattern=".{4,}" required>
+        </div>
+
+        <div class="fieldBox">
+            <label class="labelz" for="pswd2">Confirmar contraseña</label>
+            <input type="password" class="inputLarge" id="pswd2" name="password2" placeholder="1234" pattern=".{4,}" required>
+        </div>
+
+        <br> 
+        <input type="submit" class="logsterBtn" value="Registrar">
+      </form>
+    </main>
+    <!-- <footer></footer> -->
+  </body>
+</html>

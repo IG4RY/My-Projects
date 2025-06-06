@@ -1,0 +1,74 @@
+.logsterCard{
+    width: auto; height: auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    padding: 15px;
+    
+    border-radius: 10px;
+
+    font-size: 14px;
+    
+    background-color: #fff;
+}
+
+    #logsterTitle{
+        margin: 0;
+
+        border-radius: 10px 10px 0 0;
+
+        font-size: 16px;
+
+        color: #000;
+        background-color: #f9f9fb;
+    }
+
+    .fieldBox{
+        width: 100%; height: auto;
+
+        display: flex;
+
+        margin-bottom: 10px;
+        
+        border: 1px solid #bbb; border-radius: 5px;
+    }
+
+        .labelz{
+            width: 40%;
+
+            padding: 10px;
+
+            border-right: 1px solid #bbb; border-radius: 5px 0 0 5px;
+
+            background-color: #f9f9fb;
+        }
+
+        .inputLarge{
+            padding: 10px;
+
+            border: 0; border-radius: 0 5px 5px 0;
+        }
+
+    .logsterBtn{
+        width: 100%;
+
+        padding: 10px;
+        margin-bottom: 15px;
+
+        border: none; border-radius: 5px;
+
+        font-weight: bold;
+        
+        background-color: #0c6efe;
+        color: #fff;
+        
+        cursor: pointer;
+        transition: 0.5s;
+    }
+        .logsterBtn:hover{
+            box-shadow: 0 0 10px #000;
+            transition: 0.5s;
+        }

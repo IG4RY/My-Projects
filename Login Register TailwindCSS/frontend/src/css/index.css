@@ -1,0 +1,13 @@
+#registerText{
+    width: auto;
+    
+    text-decoration: none;
+    color: #000;
+    
+    transition: 0.25s;
+}
+    #registerText:hover{
+        color: #0c6efe;
+        transition: 0.25s;
+        cursor: pointer;
+    }
