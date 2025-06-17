@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="h-full flex justify-center items-center m-0 font-sans bg-zinc-800">
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -13,23 +13,22 @@
     
     <title>Login</title>
   </head>
-  <body class="h-full flex justify-center items-center m-0 font-sans bg-zinc-800">
+  <body>
     <header></header>
     <main>
       <form class="w-auto h-auto flex flex-col justify-center text-center p-4 rounded-lg text-sm bg-white" onsubmit="onFormSubmit()" autocomplete="off">
-        <h1 class="m-0 rounded-t-lg text-base text-black bg-stone-200">Login</h1>
+        <h1 class="h-10 m-0 rounded-t-lg flex justify-center items-center text-base font-bold text-black bg-stone-200">Login</h1>
         <hr class="w-full my-2 bg-neutral-400">
-        <div class="w-full h-auto flex mb-2 border border-stone-50 rounded-l-md bg-stone-200">
-            <label class="w-sm p-2 border-r border-stone-50 rounded" for="eml">Email</label>
-            <input type="email" class="inputLarge" id="eml" name="email" placeholder="CangreBurgu1t0@gmail.com" required>
+        <div class="w-full h-auto flex mb-2 border border-stone-200 rounded-md">
+          <label class="w-2/5 p-3 border-r border-stone-50 rounded-l-md bg-stone-200" for="eml">Email</label>
+          <input type="email" class="p-3 border-0 rounded-r-md" id="eml" name="email" placeholder="CorreEoO0@gmail.com" required>
         </div>
-
-        <div class="w-full h-auto flex mb-2 border border-stone-50 rounded-md">
-            <label class="labelz" for="pswd">Contraseña</label>
-            <input type="password" class="inputLarge" id="pswd" name="password" placeholder="1234" pattern=".{4,}" required>
+        <div class="w-full h-auto flex mb-2 border border-stone-200 rounded-md">
+          <label class="w-2/5 p-3 border-r border-stone-50 rounded-l-md bg-stone-200" for="pswd">Contraseña</label>
+          <input type="password" class="p-3 text-center border-0 rounded-r-md" id="pswd" name="password" placeholder="1234" pattern=".{4,}" required>
         </div>
         <br>
-        <input type="submit" class="logsterBtn" value="Iniciar sesión"> 
+        <input type="submit" class="w-full p-3 mb-4 border-none rounded font-bold bg-blue-600 text-white cursor-pointer transition duration-500 hover:shadow-xl" value="Iniciar sesión"> 
         <a href="register.html" class="w-auto no-underline text-black transition duration-300 cursor-pointer hover:text-blue-600">¡Regístrate ahora!</a>
       </form>
     </main>

@@ -15,23 +15,23 @@
     
     <title>Login</title>
   </head>
-  <body class="centered">
+  <body class="flxCtr">
     <header></header>
     <main>
       <form class="logsterCard" onsubmit="onFormSubmit()" autocomplete="off">
-        <h1 id="logsterTitle">Login</h1>
+        <h1 id="logsterTitle" class="flxCtr">Login</h1>
         <hr id="separator">
-        <div class="fieldBox">
+        <div class="fieldBox flxCtr">
             <label class="labelz" for="eml">Email</label>
-            <input type="email" class="inputLarge" id="eml" name="email" placeholder="CangreBurgu1t0@gmail.com" required>
+            <input type="email" class="inputLarge" id="eml" name="email" placeholder="CorreEoO0@gmail.com" required>
         </div>
-
-        <div class="fieldBox">
+        <div class="fieldBox flxCtr">
             <label class="labelz" for="pswd">Contraseña</label>
             <input type="password" class="inputLarge" id="pswd" name="password" placeholder="1234" pattern=".{4,}" required>
         </div>
         <br>
         <input type="submit" class="logsterBtn" value="Iniciar sesión"> 
+        <br>
         <a href="register.html" id="registerText">¡Regístrate ahora!</a>
       </form>
     </main>
