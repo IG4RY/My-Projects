@@ -1,0 +1,39 @@
+Conceptos y simbología:
+
+Todos los comandos empiezan con el prefijo "git"
+Remoto = nube. Local = máquina actual
+-d = Delete
+
+
+-- Creación
+
+git init: 1er paso para iniciar un proyecto. Crea un repositorio local de Git en la carpeta actual.
+git clone <url>: Crea el clon/copia idéntica un repositorio remoto al local.
+
+
+-- Paquete de cambios
+
+git add <archivo.extensión>: Agrega archivos al área de preparación (staging area) para subir al remoto.
+- git add . : Agrega todos los archivos modificados
+
+git commit -m "mensaje": Crea un tip "zip" de los archivos del "add". El mensaje debe describir los cambios realizados.
+
+git status: Muestra el estado de los archivos en el directorio de trabajo y el staging area. Dice cuáles han sido modificados, añadidos o eliminados.
+
+
+-- Envío y descarga de paquetes
+
+git fetch: Hace un resumen de cambios en el remoto pero sin aplicarlos al local (análisis)
+git merge <rama>: Aplica y combina los cambios de la rama especificada a la actual (ejecución).
+
+git pull: Fetch + Merge. Actualiza tu repositorio local con los cambios del remoto y los muestra.
+git push origin <rama>: Envía los paquetes locales a la rama remota. Default: "master" y en el trabajo real se crea y usa la "main" (producción).
+
+
+-- Navegación en repositorio
+
+git branch: Muestra una lista de las ramas en tu repositorio.
+git branch <nombreRama>: Crea una rama nueva.
+git checkout <rama>: Cambia a la rama especificada.
+git checkout -b <nombreRama>: Branch + Checkout. Crea y cambia a dicha rama
+git branch -d <rama>: Borra la rama local.
