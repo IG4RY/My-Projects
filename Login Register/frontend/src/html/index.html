@@ -10,7 +10,6 @@
     
     <!--CSS Style -->
     <link rel="stylesheet" href="../css/general.css"> <!-- General stuff -->
-    <link rel="stylesheet" href="../css/index.css"> <!-- Login -->
     <link rel="stylesheet" href="../css/logster.css"> <!-- Login & Register -->
     
     <title>Login</title>
@@ -21,18 +20,19 @@
       <form class="logsterCard" onsubmit="onFormSubmit()" autocomplete="off">
         <h1 id="logsterTitle" class="flxCtr">Login</h1>
         <hr id="separator">
+
         <div class="fieldBox flxCtr">
             <label class="labelz" for="eml">Email</label>
             <input type="email" class="inputLarge" id="eml" name="email" placeholder="CorreEoO0@gmail.com" required>
         </div>
+
         <div class="fieldBox flxCtr">
             <label class="labelz" for="pswd">Contraseña</label>
             <input type="password" class="inputLarge" id="pswd" name="password" placeholder="1234" pattern=".{4,}" required>
         </div>
         <br>
         <input type="submit" class="logsterBtn" value="Iniciar sesión"> 
-        <br>
-        <a href="register.html" id="registerText">¡Regístrate ahora!</a>
+        <a href="register.html" id="logsterText">¡Regístrate ahora!</a>
       </form>
     </main>
     <footer></footer>

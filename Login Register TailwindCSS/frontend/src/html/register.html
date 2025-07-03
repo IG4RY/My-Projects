@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="h-full flex justify-center items-center m-0 font-sans bg-zinc-800">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,39 +8,42 @@
     <script type="text/javascript" src="/backend/src/js/register.js"></script> <!-- Register -->
     <script type="text/javascript" src="/backend/src/js/connection.js"></script> <!-- DB -->
 
-    <!--CSS Style call -->
+    <!-- TailwindCSS Style -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <title>Register</title>
   </head>
-  <body class="centered">
+  <body class="flex justify-center align-center">
     <!-- <header></header> -->
     <main>
-      <form class="logsterCard" onsubmit="onFormSubmit()" autocomplete="off">
-        <h1 id="logsterTitle">Registro</h1>
-        <hr id="separator">
-        <div class="fieldBox">
-            <label class="labelz" for="usrNme">Nombre</label>
-            <input type="text" class="inputLarge" id="usrNme" name="userName" placeholder="EdRwado Sánchez" required>
+      <form class="w-auto h-auto flex flex-col justify-center text-center p-4 rounded-lg text-sm bg-white" onsubmit="onFormSubmit()" autocomplete="off">
+        <h1 class="h-10 m-0 rounded-t-lg flex justify-center items-center text-base font-bold text-black bg-stone-200">Registro</h1>
+        <hr class="w-full my-2 bg-neutral-400">
+
+        <div class="w-full h-auto flex mb-2 border border-stone-200 rounded-md">
+            <label class="w-2/5 p-3 border-r border-stone-50 rounded-l-md bg-stone-200" for="usrNme">Nombre</label>
+            <input type="text" class="w-2/5 p-3 bordclass="p-3 border-0 rounded-r-md"er-r border-stone-50 rounded-l-md bg-stone-200" id="usrNme" name="userName" placeholder="EdRwado Sánchez" required>
         </div>
 
-        <div class="fieldBox">
-            <label class="labelz" for="eml">Email</label>
-            <input type="email" class="inputLarge" id="eml" name="email" placeholder="ejemplo1234@gmail.com" required>
+        <div class="w-full h-auto flex mb-2 border border-stone-200 rounded-md">
+            <label class="w-2/5 p-3 border-r border-stone-50 rounded-l-md bg-stone-200" for="eml">Email</label>
+            <input type="email" class="w-2/5 p-3 bordclass="p-3 border-0 rounded-r-md"er-r border-stone-50 rounded-l-md bg-stone-200" id="eml" name="email" placeholder="ejemplo1234@gmail.com" required>
         </div>
 
-        <div class="fieldBox">
-            <label class="labelz" for="pswd">Contraseña</label>
-            <input type="password" class="inputLarge" id="pswd" name="password" placeholder="1234" pattern=".{4,}" required>
+        <div class="w-full h-auto flex mb-2 border border-stone-200 rounded-md">
+            <label class="w-2/5 p-3 border-r border-stone-50 rounded-l-md bg-stone-200" for="pswd">Contraseña</label>
+            <input type="password" class="w-2/5 p-3 bordclass="p-3 border-0 rounded-r-md"er-r border-stone-50 rounded-l-md bg-stone-200" id="pswd" name="password" placeholder="1234" pattern=".{4,}" required>
         </div>
 
-        <div class="fieldBox">
-            <label class="labelz" for="pswd2">Confirmar contraseña</label>
-            <input type="password" class="inputLarge" id="pswd2" name="password2" placeholder="1234" pattern=".{4,}" required>
+        <div class="w-full h-auto flex mb-2 border border-stone-200 rounded-md">
+            <label class="w-2/5 p-3 border-r border-stone-50 rounded-l-md bg-stone-200" for="pswd2">Confirmar contraseña</label>
+            <input type="password" class="w-2/5 p-3 bordclass="p-3 border-0 rounded-r-md"er-r border-stone-50 rounded-l-md bg-stone-200" id="pswd2" name="password2" placeholder="1234" pattern=".{4,}" required>
         </div>
 
         <br> 
-        <input type="submit" class="logsterBtn" value="Registrar">
+        
+        <input type="submit" class="w-full p-3 mb-4 border-none rounded font-bold bg-blue-600 text-white cursor-pointer transition duration-500 hover:shadow-xl" value="Registrar">
+        <a href="index.html" class="w-auto no-underline text-black transition duration-300 cursor-pointer hover:text-blue-600"> <- Volver al inicio</a>
       </form>
     </main>
     <!-- <footer></footer> -->
