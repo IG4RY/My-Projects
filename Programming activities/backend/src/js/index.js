@@ -124,11 +124,13 @@ const sumDig = no => { console.log(`\n\n8. Ex: SumDig:\n`)
 
 
 // 9. PrimouN: Request n to user n' print all 1st n prime nos
-const primouN = no => { console.log(`\n9. Ex: PrimouN\n`)
-    chart = [1,2,3,4,5,6,7,8,9,10] // Multiple Chart. Array 4 less code
+const primouN = no => { console.log(`\n9. Ex: PrimouN\n`); no = Number(no)
+    let primes = []
     
-    for(i=0; i<chart.length; i++) // use the array length
-    console.log(`${no} x ${chart[i]} = ${no * chart[i]}`)
+    for(i=2; i<=no; i++)
+        if(i % 1 === 0 && i % i === 0 && !(i % 1 === 0)) primes.push([i])
+            
+    console.log(`No: ${no}. Primous: ${primes.join(" ")}`)
 }
 
 
