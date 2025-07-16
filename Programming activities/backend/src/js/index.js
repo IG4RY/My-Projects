@@ -130,13 +130,12 @@ const sumDig = no => { console.log(`\n\n8. Ex: SumDig:\n`)
 // 9. PrimouN: Request n to user n' print all 1st n prime nos
 const primouN = no => { console.log(`\n9. Ex: PrimouN\n`); no = Number(no)
     let primes = []
-    const primou = (a % 2 === 0)
+    const primou = i => (i % 1 === 0) && (i % i === 0) && Math.abs(i) === 1;
+
     for(i=2; i<=no; i++){
-        let isPrime = true
-        for(j=2; j<=Math.sqrt(i); j++) // Check 4 divisors
-            if(i % j === 0){isPrime = false; break} // Found = Cancel shi
-        if(isPrime) primes.push(i)
-    }    
+        
+        primou(i) ? primes.push(i) : "A" // ? Pending
+    }
     console.log(`No: ${no}. Primous: ${primes.join(" ")}`)
 }
 
