@@ -115,9 +115,13 @@ const palito = no => { console.log("\n\n7. Ex: Palito\n")
 
 // 8. SumDig: Digits sum
 const sumDig = no => { console.log(`\n\n8. Ex: SumDig:\n`)
-    let dig = [], sum = 0
+    let dig = []
+    let sum = 0
 
-    for(i=0; i<no.length; i++){sum += Number(no[i]); dig.push(no[i])}
+    for(i=0; i<no.length; i++){
+        sum += Number(no[i])
+        dig.push(no[i])
+    }
 
     console.log(`No ${no}: ${dig.join(" + ")} = ${sum}\n`)
 }
@@ -126,10 +130,13 @@ const sumDig = no => { console.log(`\n\n8. Ex: SumDig:\n`)
 // 9. PrimouN: Request n to user n' print all 1st n prime nos
 const primouN = no => { console.log(`\n9. Ex: PrimouN\n`); no = Number(no)
     let primes = []
-    
-    for(i=2; i<=no; i++)
-        if(i % 1 === 0 && i % i === 0 && !(i % 1 === 0)) primes.push([i])
-            
+    const primou = (a % 2 === 0)
+    for(i=2; i<=no; i++){
+        let isPrime = true
+        for(j=2; j<=Math.sqrt(i); j++) // Check 4 divisors
+            if(i % j === 0){isPrime = false; break} // Found = Cancel shi
+        if(isPrime) primes.push(i)
+    }    
     console.log(`No: ${no}. Primous: ${primes.join(" ")}`)
 }
 
